@@ -23,7 +23,7 @@ update:
 
 .PHONY: deploy # Deploy contract
 deploy:
-	forge create --rpc-url "https://rpc.sepolia.org" --private-key ${PRIVATE_KEY} ./src/Counter.sol:Counter --verify --etherscan-api-key ${ETHERSCAN_KEY} --verifier etherscan
+	forge create --rpc-url "https://rpc.sepolia.org" --private-key ${PRIVATE_KEY} ./src/ERC20V3Factory.sol:ERC20V3Factory --verify --etherscan-api-key ${ETHERSCAN_KEY} --verifier etherscan
 
 .PHONY: clean # Clean build files
 clean:
